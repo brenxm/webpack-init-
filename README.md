@@ -1,6 +1,6 @@
 # webpack-init-
 
-# Initializing an application using webpack. 
+## Initializing an application using webpack. 
 # These are steps to add from start to finish
 
 # In terminal, first initialize node package manager (npm) by typing
