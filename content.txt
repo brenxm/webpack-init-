@@ -16,3 +16,26 @@ ni webpack.config.js
 
 # We will also add a gitignore file that will ignore the node_modules
 ni .gitignore
+
+# install the necessary loader for the application
+https://webpack.js.org/guides/asset-management/
+# for installing CSS, install the required loader
+npm install css-loader style-loader --save-dev
+# Then, go to webpack config file and setup configuration for css loader
+module.exports = {
+        module: {
+            rules: [
+                { 
+                   test: /\.(png|jpg|jpeg|svg|gif)$/i,
+                   use: ['style-loader', 'css-loader']
+            } 
+         ]
+    }
+}
+
+# For auto html generation, using htmlwebpackplugin
+https://webpack.js.org/guides/output-management/
+
+# For server and file change listener
+https://webpack.js.org/guides/development/
+
